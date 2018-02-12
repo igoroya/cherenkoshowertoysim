@@ -1,0 +1,2 @@
+height density massCoverage refractiveIndexCorrection temperature pressure
+0 0.00119504 1039.25 0.000276852 293.96

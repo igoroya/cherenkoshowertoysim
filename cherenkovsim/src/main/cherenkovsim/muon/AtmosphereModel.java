@@ -76,6 +76,25 @@ public final class AtmosphereModel {
 		
 	}
 
+	public float getDensityAt(float height) {
+		return 1.1f;//FIXME
+	}
+	
+	private float interpolateAt(float[] heights, float[] values, float height) {
+		
+		//NOTE: Use spline interpolator from Apache.Commons.Math library
+		
+		int length = heights.length;
+		
+		if (length != values.length)
+			throw new IllegalStateException();
+		
+		for (int i = 0; i < length; i++) {
+			
+		}
+		return 1.1f;//FIXME
+	}
+	
 	@Override
 	public String toString() {
 		String out = "Atmosphere model from " + location;
